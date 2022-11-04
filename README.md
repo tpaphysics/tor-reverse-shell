@@ -13,7 +13,7 @@
 
 ## **💻 Project**
 
-We created **_two isolated containers_** that communicate with the **_Tor network_** a client and a server forming a reverse shell. In this way an attacker listens for connections from the Tor network while the victim's computer connects to the attacker.
+We created **_two containers_** in isolation that communicate with the **_Tor network_** forming a **_reverse shell_**. In this way, an attacker listens for connections from the Tor network while the victim's computer connects to the attacker.
 
 <p align="center">
 <img src="./assets/architecture.png" alt="architecture" width="700px"/>
