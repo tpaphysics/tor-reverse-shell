@@ -27,7 +27,7 @@ With access to a compromised machine, the attacker will be able to escalate priv
 
 ## **💻 Project**
 
-We created **_two containers_** in isolation that communicate with the **_Tor network_** forming a **_reverse shell_**. In this way, an attacker listens for connections from the Tor network while the victim's computer connects to the attacker.
+We created **_two containers_** in isolation that communicate with the **_Tor network_** forming a **_reverse shell_**. In this way, an attacker listens for connections from the Tor network while the victim's computer connects to the attacker also through the Tor network.
 
 <p align="center">
 <img src="./assets/architecture.png" alt="architecture" width="700px"/>
