@@ -72,7 +72,7 @@ docker exec -it listen cat /var/lib/tor/hidden_service/hostname
 lsgbhtjko6zcrgsyb2nzdx76rpyaycvivl5tnmwyq336hlbqxjremcid.onion
 ```
 
-Then every call the victim makes to host `lsgbhtjko6zcrgsyb2nzdx76rpyaycvivl5tnmwyq336hlbqxjremcid.onion` will be redirected to the **_socat_** server which is listening locally on port 80.
+Every call the victim makes to host `lsgbhtjko6zcrgsyb2nzdx76rpyaycvivl5tnmwyq336hlbqxjremcid.onion` will be redirected to the **_socat_** server which is listening locally on port 80.
 
 ## **💥 Considerations**
 
