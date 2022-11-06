@@ -78,6 +78,11 @@ Then every call the victim makes to host `lsgbhtjko6zcrgsyb2nzdx76rpyaycvivl5tnm
 
 There are many ways to create a reverse shell as you can see [here](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md). We use socat because it's easy to create a reverse shell with interactive PTY and autocomplete. I'm not a racker and I'm far from it 😂. But some lamers out there make gigantic python scripts with interactive interfaces and lots of base 64 to do it. For a good lamer like me 😎, a sh terminal with busybox is enough. Using the Tor network to create a reverse shell makes it very difficult to identify the attacker. I could have used the **_alpine_** image instead of **_ubuntu_** to create the containers but there was a problem in socat and I was too lazy to do that 😅.
 
+## **📚 References**
+
+- [Van Houser](https://github.com/vanhauser-thc?tab=repositories)
+- [Hackers-cheats](https://github.com/hackerschoice/thc-tips-tricks-hacks-cheat-sheet)
+
 ## **👨‍🚀 Author**
 
 <a href="https://github.com/tpaphysics">
