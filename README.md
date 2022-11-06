@@ -23,11 +23,21 @@ To create the docker images we used [Ubuntu](https://ubuntu.com/) and installed 
 
 ## **🚀 Get Started**
 
-First open two different instances of the terminal run the script **_start_listen.sh_** in one and **_start_rshell.sh_** in the other:
+First open a terminal instance and run the **_start_listen.sh_** script:
 
 <p align="center">
-<img src="./assets/example.gif" alt="example"/>
+<img src="./assets/listen-example.gif" alt="example-1"/>
 </p>
+
+Wait for Tor startup to reach 100%. Copy the script in yellow like the one generated in the image above.
+
+Now open another instance of the terminal and run the **_start_rshell.sh_** script. After initialization, paste the script that was copied in the terminal and hit the enter key:
+
+<p align="center">
+<img src="./assets/rshell-example.gif" alt="example-2"/>
+</p>
+
+You can see that the attacker gets access to the victim computer.
 
 ## **🌐 Client explanation**
 
@@ -66,7 +76,7 @@ Then every call the victim makes to host `lsgbhtjko6zcrgsyb2nzdx76rpyaycvivl5tnm
 
 ## **💥 Considerations**
 
-There are many ways to create reverse shell as you can see [here](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md). We use socat because it's easy to create a reverse shell with interactive PTY and auto complete. Using the Tor network it is very difficult to discover the attacker's host.
+There are many ways to create a reverse shell as you can see [here](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md). We use socat because it's easy to create a reverse shell with interactive PTY and autocomplete. I'm not a racker and I'm far from it 😂. But some lamers out there make gigantic python scripts with interactive interfaces and lots of base 64 to do it. For a good lamer like me 😎, a sh terminal with busybox is enough. Using the Tor network to create a reverse shell makes it very difficult to identify the attacker. I could have used the **_alpine_** image instead of **_ubuntu_** to create the containers but there was a problem in socat and I was too lazy to do that 😅.
 
 ## **👨‍🚀 Author**
 
