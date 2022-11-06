@@ -11,7 +11,7 @@
 <br/>
 <br/>
 
-## **💁 What is Shell ?**
+## **💁 What is shell ?**
 
 We can define a shell as a link between the system and the user. We can say that the shell has the purpose of interpreting commands, transmitting the results to the system and returning the results. Various types of shell interpreters on Unix/Linux systems, the most common being sh , bash , csh , Tcsh , ksh , and zsh.
 
