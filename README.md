@@ -43,9 +43,7 @@ First open a terminal instance and run the **_start_listen.sh_** script:
 <img src="./assets/listen-example.gif" alt="example-1"/>
 </p>
 
-Wait for Tor startup to reach 100%. Copy the script in yellow like the one generated in the image above.
-
-Now open another instance of the terminal and run the **_start_rshell.sh_** script. After initialization, paste the script that was copied in the terminal and hit the enter key:
+Wait for Tor startup to reach 100%. Copy the script in yellow like the one generated in the image above. Now open another instance of the terminal and run the **_start_rshell.sh_** script. After initialization, paste the script that was copied in the terminal and hit the enter key:
 
 <p align="center">
 <img src="./assets/rshell-example.gif" alt="example-2"/>
