@@ -11,6 +11,20 @@
 <br/>
 <br/>
 
+## **💁 What is Shell ?**
+
+We can define a shell as a link between the system and the user. We can say that the shell has the purpose of interpreting commands, transmitting the results to the system and returning the results. Various types of shell interpreters on Unix/Linux systems, the most common being sh , bash , csh , Tcsh , ksh , and zsh.
+
+## **🤔 What is reverse shell ?**
+
+It is a technique used to send commands from a shell remotely through a port and thus allows the attacker to open a listening port on your server to receive connections from other machines, thus allowing control over them.
+
+<p align="center">
+<img src="./assets/rshell-example.png" alt="reverse-shell" />
+</p>
+
+With access to a compromised machine, the attacker will be able to escalate privileges to gain administrative access to the system.
+
 ## **💻 Project**
 
 We created **_two containers_** in isolation that communicate with the **_Tor network_** forming a **_reverse shell_**. In this way, an attacker listens for connections from the Tor network while the victim's computer connects to the attacker.
@@ -19,7 +33,7 @@ We created **_two containers_** in isolation that communicate with the **_Tor ne
 <img src="./assets/architecture.png" alt="architecture" width="700px"/>
 </p>
 
-To create the docker images we used [Ubuntu](https://ubuntu.com/) and installed [socat](https://linux.die.net/man/1/socat) and [tor](https://community.torproject.org/relay/setup/bridge/debian-ubuntu/) via apt-get as you can see in the dockerfiles. This project is the continuation of [this one](https://github.com/tpaphysics/reverse-shell).
+To create the docker images we used [Ubuntu](https://ubuntu.com/) and installed [socat](https://linux.die.net/man/1/socat) and [tor](https://community.torproject.org/relay/setup/bridge/debian-ubuntu/) via apt-get as you can see in the dockerfiles.
 
 ## **🚀 Get Started**
 
